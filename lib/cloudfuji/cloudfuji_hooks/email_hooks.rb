@@ -1,4 +1,4 @@
-class EmailHooks < Bushido::EventObserver
+class CloudfujiEmailHooks < Cloudfuji::EventObserver
   # NOTE: It'd be nice to have a before_filter.
 
   # "email_delivered"

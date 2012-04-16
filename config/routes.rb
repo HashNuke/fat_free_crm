@@ -4,7 +4,7 @@ FatFreeCRM::Application.routes.draw do
   scope Setting.base_url.to_s do
     root :to => 'home#index'
 
-    bushido_authentication_routes if Bushido::Platform.on_bushido?
+    cloudfuji_authentication_routes if Cloudfuji::Platform.on_cloudfuji?
     
     match 'activities' => 'home#index'
     match 'admin'      => 'admin/users#index',       :as => :admin

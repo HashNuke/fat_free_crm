@@ -1,4 +1,4 @@
-class CustomerHooks < Bushido::EventObserver
+class CloudfujiCustomerHooks < Cloudfuji::EventObserver
   # "customer_created"
   # :account_balance => 0
   # :object          => "customer"
